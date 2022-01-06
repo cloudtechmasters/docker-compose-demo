@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  #Nginx Service
+   webserver:
+     image: nginx:latest
+     container_name: webserver
+     restart: unless-stopped
+     ports:
+       - "80:80"
